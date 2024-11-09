@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to ARTWAGON</title>
+    <style>
+        body {
+            font-family: cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #444;
+            background-color: #f4f4f4;
+            overflow: hidden;
+        }
+
+        .banner {
+            background-image: url("images/main_background.jpg.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 45vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            position: relative;
+            max-width: 2000px;
+            margin: 0 auto;
+            padding: 30px;
+            border-radius: 0px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.9);
+            overflow: hidden;
+            min-height: calc(100vh - 30vh);
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-top: 20px;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .button-container {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            background-color: green; /* Brown */
+            color: #fff;
+            border: none;
+            border-radius: 50px; /* Capsule shape */
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .button:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .about-text {
+            margin-top: 50px;
+            text-align: justify; /* Justify text for better readability */
+            line-height: 1.6;
+            padding: 0 20px;
+        }
+
+        .about-text p {
+            font-size: 24px; /* Increased font size */
+            margin-bottom: 20px;
+            padding: 15px 10px; /* Add padding to paragraphs for better spacing */
+            border: 2px solid #8B4513; /* Brown border */
+            border-radius: 10px; /* Rounded border */
+            position: relative;
+        }
+
+        .about-text p::before {
+            content: "\1F58C"; /* Large painting brush symbol */
+            font-size: 80px; /* Increased font size */
+            position: absolute;
+            left: 10px;
+            top: -4%;
+            transform: translateY(-60%);
+        }
+
+        .bottom-right-symbol {
+            position: right;
+            bottom: 10px;
+            right: 100px;
+            font-size: 80px; /* Increased font size */
+            color: #8B4513; /* Brown color */
+        }
+
+        .bottom-left-symbol {
+            position: absolute;
+            bottom: 10px;
+            left: 30px;
+            font-size: 80px; /* Increased font size */
+            color: #8B4513; /* Brown color */
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <h1>Welcome to ARTWAGON: Virtual Art Gallery</h1>
+    </div>
+    <div class="container">
+        <div class="button-container">
+            <a href="signup_login.html" class="button">User Signup / Login</a>
+            <a href="artist_signup_login.php" class="button">Artist Signup / Login</a>
+            <a href="admin.php" class="button">Admin</a>
+        </div>
+        <br>
+        <div class="about-text">
+            <p>ArtWagon is your gateway to a virtual world of art, where creativity knows no bounds. Immerse yourself in a diverse collection of artworks from talented artists around the globe.
+            Discover paintings, sculptures, digital art, and more, all curated to inspire and captivate your imagination. Whether you're an artist seeking recognition or an art enthusiast in search of inspiration, ArtWagon welcomes you to explore, connect, and create.
+            At ArtWagon, we believe that art has the power to transform lives and connect people across cultures and borders.</p>
+        </div>
+    </div>
+</body>
+</html>
